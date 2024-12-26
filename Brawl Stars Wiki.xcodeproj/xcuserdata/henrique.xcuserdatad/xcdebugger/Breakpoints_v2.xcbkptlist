@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "2A38391E-FDF8-4295-A0F5-6830193DE5E1"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4AD1B579-B222-4916-9390-132F263FB702"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Brawl Stars Wiki/Home/Service/HomeService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "getBrawlerList(completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4AD1B579-B222-4916-9390-132F263FB702 - 31a34adf1d98250e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Brawl_Stars_Wiki.HomeService.getBrawlerList(completion: (Swift.Result&lt;Brawl_Stars_Wiki.BrawlerList, Brawl_Stars_Wiki.NetworkError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Brawl Stars Wiki"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/henrique/Brawl-Stars-Wiki/Brawl%20Stars%20Wiki/Home/Service/HomeService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "1220">
+               </Location>
+               <Location
+                  uuid = "4AD1B579-B222-4916-9390-132F263FB702 - 31a34adf1d98250e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Brawl_Stars_Wiki.HomeService.getBrawlerList(completion: (Swift.Result&lt;Brawl_Stars_Wiki.BrawlerList, Brawl_Stars_Wiki.NetworkError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Brawl Stars Wiki"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/henrique/Brawl-Stars-Wiki/Brawl%20Stars%20Wiki/Home/Service/HomeService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "1428">
+               </Location>
+               <Location
+                  uuid = "4AD1B579-B222-4916-9390-132F263FB702 - 31a34adf1d98250e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Brawl_Stars_Wiki.HomeService.getBrawlerList(completion: (Swift.Result&lt;Brawl_Stars_Wiki.BrawlerList, Brawl_Stars_Wiki.NetworkError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Brawl Stars Wiki"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/henrique/Brawl-Stars-Wiki/Brawl%20Stars%20Wiki/Home/Service/HomeService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "1224">
+               </Location>
+               <Location
+                  uuid = "4AD1B579-B222-4916-9390-132F263FB702 - 31a34adf1d98250e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Brawl_Stars_Wiki.HomeService.getBrawlerList(completion: (Swift.Result&lt;Brawl_Stars_Wiki.BrawlerList, Brawl_Stars_Wiki.NetworkError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Brawl Stars Wiki"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/henrique/Brawl-Stars-Wiki/Brawl%20Stars%20Wiki/Home/Service/HomeService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "1432">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EFBBDDED-8C8F-48DD-B2D9-0A21C504D067"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Brawl Stars Wiki/Home/Service/HomeService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "getBrawlerList(completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "EFBBDDED-8C8F-48DD-B2D9-0A21C504D067 - 31a34adf1d982630"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Brawl_Stars_Wiki.HomeService.getBrawlerList(completion: (Swift.Result&lt;Brawl_Stars_Wiki.BrawlerList, Brawl_Stars_Wiki.NetworkError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Brawl Stars Wiki"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/henrique/Brawl-Stars-Wiki/Brawl%20Stars%20Wiki/Home/Service/HomeService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "1460">
+               </Location>
+               <Location
+                  uuid = "EFBBDDED-8C8F-48DD-B2D9-0A21C504D067 - 31a34adf1d982630"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Brawl_Stars_Wiki.HomeService.getBrawlerList(completion: (Swift.Result&lt;Brawl_Stars_Wiki.BrawlerList, Brawl_Stars_Wiki.NetworkError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Brawl Stars Wiki"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/henrique/Brawl-Stars-Wiki/Brawl%20Stars%20Wiki/Home/Service/HomeService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "1464">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4F8EC478-FEFC-44EE-BEF7-8D3FFFF8D3FB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Brawl Stars Wiki/Home/Service/HomeService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "getBrawlerList(completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4F8EC478-FEFC-44EE-BEF7-8D3FFFF8D3FB - 31a34adf1d98254c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Brawl_Stars_Wiki.HomeService.getBrawlerList(completion: (Swift.Result&lt;Brawl_Stars_Wiki.BrawlerList, Brawl_Stars_Wiki.NetworkError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Brawl Stars Wiki"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/henrique/Brawl-Stars-Wiki/Brawl%20Stars%20Wiki/Home/Service/HomeService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "2204">
+               </Location>
+               <Location
+                  uuid = "4F8EC478-FEFC-44EE-BEF7-8D3FFFF8D3FB - 31a34adf1d98254c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Brawl_Stars_Wiki.HomeService.getBrawlerList(completion: (Swift.Result&lt;Brawl_Stars_Wiki.BrawlerList, Brawl_Stars_Wiki.NetworkError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Brawl Stars Wiki"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/henrique/Brawl-Stars-Wiki/Brawl%20Stars%20Wiki/Home/Service/HomeService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "2216">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D597F742-A075-4C68-9207-F50DFD27D667"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Brawl Stars Wiki/Home/Service/HomeService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "getBrawlerList(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
