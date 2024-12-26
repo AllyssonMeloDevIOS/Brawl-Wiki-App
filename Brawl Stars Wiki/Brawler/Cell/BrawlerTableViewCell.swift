@@ -42,30 +42,25 @@ class BrawlerTableViewCell: UITableViewCell {
         ])
     }
     
-//    public func setupBrawlerCell(data: List) {
-//        screen.nameBrawler.text = data.name ?? "Sem Nome"
-////        screen.iconBrawl.sd_setImage(with: URL(string: data.imageUrl2 ?? ""))
-//        screen.iconBrawl.sd_setImage(with: URL(string: data.imageUrl2 ?? ""))
-//    }
     public func setupBrawlerCell(data: List) {
-        // Carregar a imagem com borda do brawler
+
         if let imageURLString = data.imageUrl2, let url = URL(string: imageURLString) {
                 screen.iconBrawl.sd_setImage(with: url)
             }
             
-            // Exibir o nome do brawler
+
             screen.nameBrawler.text = data.name ?? "Sem Nome"
             
-            // Verificar a raridade e configurar a cor da borda e do nome
+
             if let rarity = data.rarity {
-                // Configuração da cor da borda
+
                 if let borderColor = rarity.color, let color = UIColor(hex: borderColor.rawValue) {
                     screen.iconBrawl.layer.borderColor = color.cgColor
                 } else {
                     screen.iconBrawl.layer.borderColor = UIColor.clear.cgColor
                 }
                 
-                // Configuração da cor do nome do brawler
+
                 if let textColor = rarity.color, let color = UIColor(hex: textColor.rawValue) {
                     screen.nameBrawler.textColor = color
                 } else {
@@ -73,14 +68,14 @@ class BrawlerTableViewCell: UITableViewCell {
                 }
             }
             
-            // Configuração da espessura da borda
+
             screen.iconBrawl.layer.borderWidth = 3.0
     }
                                           
 }
 
 extension UIColor {
-    // Função para converter hexadecimal em UIColor
+
     convenience init?(hex: String) {
         let hexSanitized = hex.trimmingCharacters(in: .whitespacesAndNewlines).replacingOccurrences(of: "#", with: "")
         
@@ -99,5 +94,3 @@ extension UIColor {
         }
     }
 }
-
-//xx
