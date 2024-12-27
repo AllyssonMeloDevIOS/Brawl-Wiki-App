@@ -10,7 +10,16 @@ import UIKit
 class BrawlerVC: UIViewController {
 
     var brawlerScreen: BrawlerScreen?
-    var viewModel: HomeViewModel = HomeViewModel()
+    private let viewModel: HomeViewModel
+    
+    init(viewModel: HomeViewModel = HomeViewModel(service: HomeService())) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func loadView() {
         brawlerScreen = BrawlerScreen()
@@ -19,36 +28,34 @@ class BrawlerVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        viewModel.fetchRequest()
-        viewModel.delegate(delegate: self)
         brawlerScreen?.configTableViewProtocols(delegate: self, dataSource: self)
-
-    }
-
-    override func viewWillAppear(_ animated: Bool) {
+        setupBindings()
         viewModel.fetchRequest()
-        print("viewWillAppear")
     }
     
-    
-    
-}
+    private func setupBindings() {
+            viewModel.onSuccess = { [weak self] in
+                DispatchQueue.main.async {
+                    self?.reloadData()
+                }
+            }
 
-extension BrawlerVC: HomeViewModelProtocol {
-    func success() {
-//        self.brawlerScreen?.configTableViewProtocols(delegate: self, dataSource: self)
-        DispatchQueue.main.async {
-            self.brawlerScreen?.tableView.reloadData()
-
+            viewModel.onError = { [weak self] errorMessage in
+                DispatchQueue.main.async {
+                    self?.showError(message: errorMessage)
+                }
+            }
         }
-    }
     
-    func error(message: String) {
-        let alertController: UIAlertController = UIAlertController(title: "Ops, tivemos um problema", message: message, preferredStyle: .alert)
-        let ok = UIAlertAction(title: "Ok", style: .cancel)
-        alertController.addAction(ok)
-        present(alertController, animated: true)
+    private func reloadData() {
+        brawlerScreen?.tableView.reloadData()
     }
+
+    private func showError(message: String) {
+            let alert = UIAlertController(title: "Erro", message: message, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default))
+            present(alert, animated: true)
+        }
 }
 
 extension BrawlerVC: UITableViewDelegate, UITableViewDataSource {
@@ -58,7 +65,11 @@ extension BrawlerVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: BrawlerTableViewCell.identifier, for: indexPath) as? BrawlerTableViewCell
-        cell?.setupBrawlerCell(data: viewModel.loadCurrentBrawler(indexPath: indexPath))
+        guard let brawler = viewModel.loadCurrentBrawler(indexPath: indexPath) else {
+                return UITableViewCell()
+            }
+            
+            cell?.setupBrawlerCell(data: brawler)
         return cell ?? UITableViewCell()
     }
     
