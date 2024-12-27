@@ -7,25 +7,38 @@
 
 import Foundation
 
+// MARK: - Protocolo criado para a o serviço
+protocol HomeServiceProtocol {
+    func getBrawlerList(completion: @escaping (Result<BrawlWiki, NetworkError>) -> Void)
+}
 
+// MARK: - Protocolo para abstração do URLSession
+protocol NetworkSession {
+    func dataTask(with url: URL, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> URLSessionDataTask
+}
 
-class HomeService {
+extension URLSession: NetworkSession {}
+
+class HomeService: HomeServiceProtocol {
+    
+    private let session: NetworkSession
+    
+    init(session: NetworkSession = URLSession.shared) {
+        self.session = session
+    }
     
     func getBrawlerList(completion: @escaping(Result<BrawlWiki,NetworkError>) -> Void) {
         
-        let urlString: String = "https://api.brawlify.com/v1/brawlers"
-        
-        guard let url: URL = URL(string: urlString) else {
-            DispatchQueue.main.async {
-                completion(.failure(.invalidURL(url: urlString)))
-            }
+        guard let url = URL(string: "https://api.brawlify.com/v1/brawlers") else {
+            completion(.failure(.invalidURL(url: "https://api.brawlify.com/v1/brawlers")))
             return
         }
         
-        let task = URLSession.shared.dataTask(with: url) {  data, response, error in
+        
+        session.dataTask(with: url) {  data, response, error in
             
             DispatchQueue.main.async {
-                if let error {
+                if let error = error {
                     completion(.failure(.networkFailure(error)))
                     return
                 }
@@ -60,7 +73,6 @@ class HomeService {
                     completion(.failure(.decodingError(error)))
                 }
             }
-        }
-        task.resume()
+        }.resume()
     }
 }

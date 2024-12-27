@@ -10,7 +10,7 @@ import UIKit
 class HomeVC: UIViewController {
 
     var homeScreen: HomeScreen?
-    var viewModel: HomeViewModel = HomeViewModel()
+//    var viewModel: HomeViewModel = HomeViewModel()
     
     override func loadView() {
         homeScreen = HomeScreen()
