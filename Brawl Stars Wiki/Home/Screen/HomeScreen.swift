@@ -97,6 +97,9 @@ class HomeScreen: UIView {
             itemButton.topAnchor.constraint(equalTo: brawlerButton.bottomAnchor, constant: 20),
             itemButton.leadingAnchor.constraint(equalTo: brawlerButton.leadingAnchor),
             itemButton.trailingAnchor.constraint(equalTo: brawlerButton.trailingAnchor),
+            itemButton.heightAnchor.constraint(equalTo: brawlerButton.heightAnchor),
+            itemButton.widthAnchor.constraint(equalTo: brawlerButton.widthAnchor),
+            
             
         ])
     }

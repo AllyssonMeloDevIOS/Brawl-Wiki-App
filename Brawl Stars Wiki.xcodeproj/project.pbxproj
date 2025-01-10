@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		846994D92D2B50AE00512066 /* RarityCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846994D82D2B50AE00512066 /* RarityCollectionViewCell.swift */; };
+		846994DB2D2B510300512066 /* RarityCollectionViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846994DA2D2B510300512066 /* RarityCollectionViewCellScreen.swift */; };
 		8474B0DF2B95CDDA00326CD8 /* BrawlerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8474B0DE2B95CDDA00326CD8 /* BrawlerTableViewCell.swift */; };
 		8474B0E22B95CE0900326CD8 /* BrawlerTableViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8474B0E12B95CE0900326CD8 /* BrawlerTableViewCellScreen.swift */; };
 		8478EBD22B94DF1A00798E8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8478EBD12B94DF1A00798E8C /* AppDelegate.swift */; };
@@ -47,6 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		846994D82D2B50AE00512066 /* RarityCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RarityCollectionViewCell.swift; sourceTree = "<group>"; };
+		846994DA2D2B510300512066 /* RarityCollectionViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RarityCollectionViewCellScreen.swift; sourceTree = "<group>"; };
 		8474B0DE2B95CDDA00326CD8 /* BrawlerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrawlerTableViewCell.swift; sourceTree = "<group>"; };
 		8474B0E12B95CE0900326CD8 /* BrawlerTableViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrawlerTableViewCellScreen.swift; sourceTree = "<group>"; };
 		8478EBCE2B94DF1A00798E8C /* Brawl Stars Wiki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Brawl Stars Wiki.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,11 +102,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8474B0DD2B95CDA800326CD8 /* Cell */ = {
+		846994D62D2B4FFB00512066 /* BrawlerTableView */ = {
 			isa = PBXGroup;
 			children = (
 				8474B0E02B95CDDF00326CD8 /* Screen */,
 				8474B0DE2B95CDDA00326CD8 /* BrawlerTableViewCell.swift */,
+			);
+			path = BrawlerTableView;
+			sourceTree = "<group>";
+		};
+		846994D72D2B501000512066 /* RarityCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				846994DC2D2B523E00512066 /* Screen */,
+				846994D82D2B50AE00512066 /* RarityCollectionViewCell.swift */,
+			);
+			path = RarityCollectionView;
+			sourceTree = "<group>";
+		};
+		846994DC2D2B523E00512066 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				846994DA2D2B510300512066 /* RarityCollectionViewCellScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		8474B0DD2B95CDA800326CD8 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				846994D72D2B501000512066 /* RarityCollectionView */,
+				846994D62D2B4FFB00512066 /* BrawlerTableView */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -138,9 +168,8 @@
 		8478EBD02B94DF1A00798E8C /* Brawl Stars Wiki */ = {
 			isa = PBXGroup;
 			children = (
-				847DAE3F2B9D51A400117C15 /* Service */,
 				8486E42D2B956BF1005EDCBF /* Item */,
-				848120CE2B96B2F400EC517C /* Cell */,
+				847DAE3F2B9D51A400117C15 /* Service */,
 				8486E4242B955C99005EDCBF /* Brawler */,
 				848120CA2B96AF5F00EC517C /* Model */,
 				8478EC012B94E08F00798E8C /* Home */,
@@ -265,6 +294,7 @@
 		8486E42D2B956BF1005EDCBF /* Item */ = {
 			isa = PBXGroup;
 			children = (
+				848120CE2B96B2F400EC517C /* Cell */,
 				8486E42E2B956BF7005EDCBF /* VC */,
 			);
 			path = Item;
@@ -417,11 +447,13 @@
 			files = (
 				8474B0E22B95CE0900326CD8 /* BrawlerTableViewCellScreen.swift in Sources */,
 				848120CC2B96AF7400EC517C /* BrawlerList.swift in Sources */,
+				846994DB2D2B510300512066 /* RarityCollectionViewCellScreen.swift in Sources */,
 				8486E42C2B9566DC005EDCBF /* BrawlerVC.swift in Sources */,
 				8478EC052B94E10900798E8C /* HomeScreen.swift in Sources */,
 				8478EBD62B94DF1A00798E8C /* HomeVC.swift in Sources */,
 				847DAE3E2B9D4E9500117C15 /* HomeService.swift in Sources */,
 				8478EBD22B94DF1A00798E8C /* AppDelegate.swift in Sources */,
+				846994D92D2B50AE00512066 /* RarityCollectionViewCell.swift in Sources */,
 				8478EBD42B94DF1A00798E8C /* SceneDelegate.swift in Sources */,
 				847DAE3B2B9D4D6500117C15 /* HomeViewModel.swift in Sources */,
 				8486E4302B956C08005EDCBF /* ItemVC.swift in Sources */,
